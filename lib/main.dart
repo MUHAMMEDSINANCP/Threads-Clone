@@ -18,7 +18,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Threads Clone',
-      theme: ThemeData(),
+      theme: ThemeData(
+          colorScheme:
+              ColorScheme.fromSwatch().copyWith(primary: Colors.black87)),
       home: StreamBuilder<User?>(
           stream: FirebaseAuth.instance.authStateChanges(),
           builder: (context, snapshot) {
