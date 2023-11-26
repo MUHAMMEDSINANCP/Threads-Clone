@@ -4,22 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:threads_clone/screens/home.dart';
 import 'package:threads_clone/screens/login.dart';
 
-void showSnackBar(BuildContext context, String message) {
-  ScaffoldMessenger.of(context).showSnackBar(
-    SnackBar(
-      dismissDirection: DismissDirection.up,
-      behavior: SnackBarBehavior.floating,
-      duration: const Duration(seconds: 1),
-      backgroundColor: Colors.redAccent,
-      content: Text(
-        message,
-        style: const TextStyle(
-          fontSize: 18,
-        ),
-      ),
-    ),
-  );
-}
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
@@ -333,4 +317,22 @@ class _SignupScreenState extends State<SignupScreen> {
       )),
     );
   }
+}
+
+
+void showSnackBar(BuildContext context, String message) {
+  ScaffoldMessenger.of(context).showSnackBar(
+    SnackBar(
+      dismissDirection: DismissDirection.up,
+      behavior: SnackBarBehavior.floating,
+      duration: const Duration(seconds: 1),
+      backgroundColor: Colors.redAccent,
+      content: Text(
+        message,
+        style: const TextStyle(
+          fontSize: 18,
+        ),
+      ),
+    ),
+  );
 }
