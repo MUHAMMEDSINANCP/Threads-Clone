@@ -3,6 +3,7 @@
 A Flutter and Firebase-powered Threads clone, meticulously developed with clean architecture, offering a seamless messaging experience through real-time communication with Firestore database integration.
 
 ### Key Features:
+
 Clean Architecture: Ensures an organized and maintainable codebase.
 Flutter & Firebase: Built using Flutter for cross-platform compatibility and Firebase for real-time functionality.
 Firestore Database: Enables efficient data storage and retrieval for seamless messaging.
